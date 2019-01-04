@@ -87,40 +87,39 @@ React Native styling material in one page. Imported from the [react-native style
 
 ## React Native style properties with flex:0 and flex:1
 
-1. #### flex: 0
+## **Flex: 0**
 
-   flex: 0
+- **flex: 0**
+  - Element takes the size of contents. According to the [documentation](https://facebook.github.io/react-native/docs/layout-props.html#flexgrow) it should be sized by setting width and height props but it seems to fit to contents if those aren't set.
+- **flex: 0, flexBasis: {{px}}**
+  - Element takes the size given by flexBasis
+- **flex: 0, flexGrow: 1**
+  - with flex: 0 and flexGrow: 1; it's the same as adding the size of the contents (in the example above it's a ) to the size of an element that's set to flex: 1. It's similar to flex: 1, flexBasis: 10 except instead of adding a number of pixels you're adding the size of the content.
+- **flex: 0, flexShrink: 1**
+  - With flex: 0 and flexShrink: 1, the element seems to take the size of the content, in other words it's the same as just flex: 0. I'll bet there are situations where it would be bigger than the content but I haven't see that yet.
+- **flex: 0, flexGrow: 1, flexBasis: {{px}}**
+  - This is the same as flex: 0, flexGrow: 1 except instead of adding the content size to a flex: 1 element it adds the given number of pixels.
+- **flex: 0, flexShrink: 1, flexBasis: {{px}}**
+  - This is the same as flex: 0, flexBasis: {{px}}.
+- **flex: 0, height: {{px}}**
+  - With flex: 0, height is treated just like flexBasis. If there is both a height and flexBasis are set, height is ignored.
 
-   - Element takes the size of contents. According to the [documentation](https://facebook.github.io/react-native/docs/layout-props.html#flexgrow) it should be sized by setting width and height props but it seems to fit to contents if those aren't set.
-   - flex: 0, flexBasis: {{px}}
-     - Element takes the size given by flexBasis
-   - flex: 0, flexGrow: 1
-     - With flex: 0 and flexGrow: 1; it's the same as adding the size of the contents (in the example above it's a ) to the size of an element that's set to flex: 1. It's similar to flex: 1, flexBasis: 10 except instead of adding a number of pixels you're adding the size of the content.
-   - flex: 0, flexShrink: 1
-     - With flex: 0 and flexShrink: 1, the element seems to take the size of the content, in other words it's the same as just flex: 0. I'll bet there are situations where it would be bigger than the content but I haven't see that yet.
-   - flex: 0, flexGrow: 1, flexBasis: {{px}}
-     - This is the same as flex: 0, flexGrow: 1 except instead of adding the content size to a flex: 1 element it adds the given number of pixels.
-   - flex: 0, flexShrink: 1, flexBasis: {{px}}
-     - This is the same as flex: 0, flexBasis: {{px}}.
-   - flex: 0, height: {{px}}
-     - With flex: 0, height is treated just like flexBasis. If there is both a height and flexBasis are set, height is ignored.
+## **Flex: 1**
 
-2. #### Flex: 1
-
-   flex: 1
-   Element takes available space. See [documentation](https://facebook.github.io/react-native/docs/layout-props.html#flexgrow) for more details
-   flex: 1, flexBasis: {{px}}
-   With flex: 1 and flexBasis: {{px}}; the value of flexBasis is added to the element's size. In other words, it's like taking a flex: 1 element and adding on the number of pixels set by flexBasis. So if a flex: 1 element is 50px, and you add flexBasis: 20 the element will now be 70px.
-   flex: 1, flexGrow: 1
-   ignored
-   flex: 1, flexShrink: 1
-   ignored
-   flex: 1, flexGrow: 1, flexBasis: {{px}}
-   This is the same as flex: 1, flexBasis: {{px}} since flexGrow is ignored.
-   flex: 1, flexShrink: 1, flexBasis: {{px}}
-   This is the same as flex: 1, flexBasis: {{px}} since flexShrink is ignored.
-   flex: 1, height: {{px}}
-   With flex: 1, height is ignored. Use flexBasis instead.
+- **flex: 1**
+  - Element takes available space. See [documentation](https://facebook.github.io/react-native/docs/layout-props.html#flexgrow) for more details
+- **flex: 1, flexBasis: {{px}}**
+  - With flex: 1 and flexBasis: {{px}}; the value of flexBasis is added to the element's size. In other words, it's like taking a flex: 1 element and adding on the number of pixels set by flexBasis. So if a flex: 1 element is 50px, and you add flexBasis: 20 the element will now be 70px.
+- **flex: 1, flexGrow: 1**
+  - ignored
+- **flex: 1, flexShrink: 1**
+  - ignored
+- **flex: 1, flexGrow: 1, flexBasis: {{px}}**
+  - This is the same as flex: 1, flexBasis: {{px}} since flexGrow is ignored.
+- **flex: 1, flexShrink: 1, flexBasis: {{px}}**
+  - This is the same as flex: 1, flexBasis: {{px}} since flexShrink is ignored.
+- **flex: 1, height: {{px}}**
+  - With flex: 1, height is ignored. Use flexBasis instead.
 
 ## Basic stylesheet creation
 
