@@ -2,10 +2,23 @@
 
 React Native styling material in one page. Imported from the [react-native style props](https://facebook.github.io/react-native/docs/layout-props).
 
+### Table of Contents
+
+- [Flex](https://github.com/anujjangid/react-native-styling-cheat-sheet/#flex-properties)
+- [Margin](https://github.com/anujjangid/react-native-styling-cheat-sheet/#margin-properties)
+- [Padding](https://github.com/anujjangid/react-native-styling-cheat-sheet/#padding-properties)
+- [Border](https://github.com/anujjangid/react-native-styling-cheat-sheet/#border-properties)
+- [Border Radius](https://github.com/anujjangid/react-native-styling-cheat-sheet/#border-radius-properties)
+- [Mixed](https://github.com/anujjangid/react-native-styling-cheat-sheet/#mixed-properties)
+- [Flex 0 & Flex 1](https://github.com/anujjangid/react-native-styling-cheat-sheet/#react-native-style-properties-with-flex0-and-flex1)
+- [Stylesheet Creation](https://github.com/anujjangid/react-native-styling-cheat-sheet/#basic-stylesheet-creation)
+- [Stylesheet Usage](https://github.com/anujjangid/react-native-styling-cheat-sheet/#how-to-use-the-stylesheet)
+- [Device Utilities](https://github.com/anujjangid/react-native-styling-cheat-sheet/#device-utilities)
+
 ## Flex Properties
 
 | **Name**       |                                         **Type**                                          | **Default Value** | **Description**                                                                                                                                                                                                                                                                                            |
-| -------------- | :---------------------------------------------------------------------------------------: | :---------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :------------- | :---------------------------------------------------------------------------------------: | :---------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Flex           |                                          Number                                           |         0         | React Native flex is entirely different if you compare with `css-flex`                                                                                                                                                                                                                                     |
 | flexDirection  |                Any one of `row`, `row-reverse`, `column`, `column-reverse`                |     `column`      | `flexDirection` controls the direction of childrens, `row` works from left to right, column works from top to bottom                                                                                                                                                                                       |
 | flexBasis      |                                          number                                           |         0         | --                                                                                                                                                                                                                                                                                                         |
@@ -21,7 +34,7 @@ React Native styling material in one page. Imported from the [react-native style
 ## Margin Properties
 
 | **Name**         | **Type** | **Default Value** | **Description**                                                                                                                                                                     |
-| ---------------- | :------: | :---------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :--------------- | :------: | :---------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | margin           |  number  |         0         | Set `margin` on each corner (top,right,bottom,left)                                                                                                                                 |
 | marginTop        |  number  |         0         | Works same as in css `margin-top`                                                                                                                                                   |
 | marginRight      |  number  |         0         | Works same as in css `margin-right`                                                                                                                                                 |
@@ -35,7 +48,7 @@ React Native styling material in one page. Imported from the [react-native style
 ## Padding Properties
 
 | **Name**          | **Type** | **Default Value** | **Description**                                                                                                                                                                         |
-| ----------------- | :------: | :---------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :---------------- | :------: | :---------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | padding           |  number  |         0         | Set `padding` on each corner (top,right,bottom,left)                                                                                                                                    |
 | paddingTop        |  number  |         0         | Works same as in css `padding-top`                                                                                                                                                      |
 | paddingRight      |  number  |         0         | Works same as in css `padding-right`                                                                                                                                                    |
@@ -49,7 +62,7 @@ React Native styling material in one page. Imported from the [react-native style
 ## Border Properties
 
 | **Name**          | **Type** | **Default Value** | **Description**                                                                                                                                                                                     |
-| ----------------- | :------: | :---------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :---------------- | :------: | :---------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | borderTopWidth    |  number  |         0         | Works same as in css `border-top-width`                                                                                                                                                             |
 | borderRightWidth  |  number  |         0         | Works same as in css `border-right-width`                                                                                                                                                           |
 | borderBottomWidth |  number  |         0         | Works same as in css `border-bottom-width`                                                                                                                                                          |
@@ -61,7 +74,7 @@ React Native styling material in one page. Imported from the [react-native style
 ## Border Radius Properties
 
 | **Name**                | **Type** | **Required** | **Description** |
-| ----------------------- | :------: | :----------: | :-------------: |
+| :---------------------- | :------: | :----------: | :-------------: |
 | borderTopLeftRadius     |  number  |    false     |       --        |
 | borderTopRightRadius    |  number  |    false     |       --        |
 | borderBottomLeftRadius  |  number  |    false     |       --        |
@@ -70,7 +83,7 @@ React Native styling material in one page. Imported from the [react-native style
 ## Mixed Properties
 
 | **Name**  |             **Type**              |  **Default Value**   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| --------- | :-------------------------------: | :------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------- | :-------------------------------: | :------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | width     |              number               |        auto\*        | `width` sets the width of this component. It works similarly to `width` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See [http://www.w3schools.com/cssref/pr_dim_width.asp](http://www.w3schools.com/cssref/pr_dim_width.asp) for more details.                                                                                                                                                                                                                                                                                                                                       |
 | height    |              number               |        auto\*        | `height` sets the height of this component. It works similarly to `height` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See [http://www.w3schools.com/cssref/pr_dim_width.asp](http://www.w3schools.com/cssref/pr_dim_width.asp) for more details.                                                                                                                                                                                                                                                                                                                                    |
 | maxWidth  |              number               |        auto\*        | `maxWidth` is the maximum width for this component, in logical pixels. It works similarly to `max-width` in CSS, but in React Native you must use logical pixel units, rather than percents, ems, or any of that. See [http://www.w3schools.com/cssref/pr_dim_max-width.asp](http://www.w3schools.com/cssref/pr_dim_max-width.asp)for more details.                                                                                                                                                                                                                                                                                               |
@@ -104,7 +117,7 @@ React Native styling material in one page. Imported from the [react-native style
 - **flex: 0, height: {{px}}**
   - With flex: 0, height is treated just like flexBasis. If there is both a height and flexBasis are set, height is ignored.
 
-## **Flex: 1**
+#### **Flex: 1**
 
 - **flex: 1**
   - Element takes available space. See [documentation](https://facebook.github.io/react-native/docs/layout-props.html#flexgrow) for more details
